@@ -1,0 +1,254 @@
+@media only screen and (max-width: 4000px) {
+  .carte {
+    height: 345px;
+    width: calc(90%);
+  }
+
+  .descr {
+    float: left;
+    width: calc(90% - 370px);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .carte {
+    height: 900px;
+    width: 455px;
+  }
+
+  .descr {
+    float: left;
+    width: 455px;
+  }
+}
+button,
+input[type=submit] {
+  border: none !important;
+}
+
+.myButton {
+  box-shadow: inset 0px 0px 0px 0px #7a9437;
+  background: linear-gradient(to bottom, #7a9437 5%, #7a9437 100%);
+  background-color: #7a9437;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+  font-weight: 600 !important;
+  padding: 9px 29px;
+  text-decoration: none;
+  text-shadow: 0px 2px 0px #476e08;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #7a9437 5%, #7a9437 100%);
+  background-color: #7a9437;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600 !important;
+  padding-left: 65px !important;
+  padding-top: 25px !important;
+  padding-bottom: 30px;
+}
+
+h1::before {
+  content: "";
+  height: 3px;
+  border: #83a03b solid 2px;
+  margin-right: 10px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+  font-weight: 700 !important;
+  padding-left: 5px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+  font-weight: 700 !important;
+  padding-left: 50px;
+}
+
+.container-fluid.mt-3 {
+  margin: 45px;
+}
+
+th {
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+  color: black;
+  font-weight: 700 !important;
+  padding-left: 50px;
+}
+
+td {
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+  color: #7a9437;
+  font-weight: 500 !important;
+  padding-left: 15px !important;
+}
+
+.spanListe {
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+  font-weight: 500 !important;
+  padding-left: 5px;
+}
+
+.liste_plats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carte {
+  border: 20px solid white;
+  border-top: 10px solid white;
+  margin: auto;
+  margin-top: 4px;
+  background-repeat: no-repeat;
+}
+.carte .image_area {
+  float: left;
+  width: 465px;
+  height: 345px;
+}
+.carte .image_area .image_txt {
+  font-family: arial;
+  font-size: 35px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 455px;
+  padding-top: 12px;
+}
+.carte .image_area .image_txt .nom_area {
+  padding-bottom: 41px;
+  padding-left: 10px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  padding-right: 80px;
+  float: left;
+  width: 355px;
+}
+.carte .image_area .image_txt .prix_area {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  padding-right: 12px;
+  padding-bottom: 41px;
+  padding-left: 10px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+}
+.carte .descr {
+  float: left;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500 !important;
+  padding: 37px;
+  margin-right: 25px;
+  font-size: 25px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0 0 10px #fff;
+  color: white !important;
+}
+
+.logo-image {
+  padding: 20px;
+}
+
+.ghost {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.margeGauche {
+  font-family: "Montserrat", sans-serif;
+  font-weight: x-small;
+  font-weight: 300 !important;
+  margin-left: 50px;
+}
+
+.nav_links {
+  padding-top: 42px !important;
+}
+
+.nav_links_admin {
+  padding-top: 42px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+@media only screen and (max-width: 1400px) {
+  .nav_links_admin {
+    padding-top: 42px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .nav_links {
+    padding-top: 42px !important;
+    padding-left: 68px !important;
+    padding-right: 5px !important;
+    padding-top: 0px !important;
+  }
+
+  .nav-logo {
+    padding-left: 0px !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .ghost {
+    height: 190px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .nav_links_admin {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-right: 10px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav_links_admin {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-right: 10px !important;
+  }
+}/*# sourceMappingURL=carte.css.map */

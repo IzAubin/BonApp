@@ -1,0 +1,53 @@
+include head.pug 
+  title BonappExpress Menu traiteur
+  link(rel='stylesheet' href='../stylesheets/carte.css')
+  link(rel='stylesheet' href='../stylesheets/plat_menu.css')
+include navClient.pug 
+h1 Selectionner votre menu
+ul 
+  each elem in liste
+    li
+      .container-fluid.plat_separator
+        .row.plat_row
+          .col-md-3
+            .plat_image(style="background-image: url(../images/"+elem.image+".jpg);")
+          .col-md-8.plat_text_area
+            span.styletype.plat_title=elem.nom
+            span.styletype &nbsp; - &nbsp;
+            span.styletype=elem.prix
+            span.styletype  $
+            br
+            br
+            .plat_description=elem.description
+            .plat_options
+              .plat_option_position
+                div
+                  form(action='/ajouterAuPanier' method="POST")
+                    .row(style='width: 100%;')
+                      //
+                        <div class="plat_option_titre">
+                        <h2>Votre selection:</h2>
+                        </div>
+                      .plat_portion
+                        div
+                          input(type='radio' name='portion' value='1' required='')
+                          span &nbsp;&nbsp;
+                          label.plat_portion_label(for='portion') &nbsp;Portion pour 1
+                        div
+                          input(type='radio' name='portion' value='2' required='')
+                          span &nbsp;&nbsp;
+                          label.plat_portion_label(for='portion') &nbsp;Portion pour 2
+                        div
+                          input(type='radio' name='portion' value='4' required='')
+                          span &nbsp;&nbsp;
+                          label.plat_portion_label(for='portion') &nbsp;Portion pour 4
+                      .plat_vege
+                        div
+                          input(type='checkbox' name='vege' value='vege')
+                          span &nbsp;&nbsp;&nbsp;
+                          img(src='images/V.png' alt='vegan')
+                      .plat_bouton
+                        button.myButton(style='right: 0;' type='submit') Ajouter
+                      input(type="text" name="nom" value=elem.nom hidden)
+                      input(type="text" name="description" value=elem.description hidden)
+                      input(type="text" name="prix" value=elem.prix hidden)

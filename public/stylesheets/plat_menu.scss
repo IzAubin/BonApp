@@ -1,0 +1,126 @@
+// .spacer {
+//   height: 100px;
+// }
+
+.plat_image {
+  margin-left: 20px;
+  height: 345px;
+  width: 455px;
+  // border: 2px solid blue;
+
+  // background-image: url("../images/1.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+
+  border-radius: 10px;
+}
+.styletype {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-large;
+  font-weight: 700 !important;
+}
+
+.plat_description {
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+  color: #7a9437;
+  font-weight: 500 !important;
+}
+
+.plat_text_area {
+  position: relative;
+  z-index: 4;
+  background: linear-gradient(
+    0.25turn,
+    #ffffff00,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff
+  );
+  margin-left: 20px;
+  // border: 2px solid blue;
+  height: 345px;
+  // width: 455px;
+}
+.plat_title {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.plat_description {
+  // color: burlywood;
+  margin-left: 20px;
+  // background-color: rgb(224, 214, 127);
+}
+.plat_options {
+  // position: absolute;
+  bottom: 0;
+}
+.plat_bouton {
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+}
+.plat_vege {
+  position: absolute;
+  bottom: 25%;
+  left: 3%;
+}
+.plat_portion {
+  position: absolute;
+  bottom: 40%;
+  left: 3%;
+}
+
+.plat_separator {
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 1000px) {
+  .plat_bouton {
+    position: absolute;
+    bottom: 0;
+    right: 44%;
+  }
+  .plat_vege {
+    position: absolute;
+    bottom: 0;
+    right: 78%;
+  }
+  .plat_portion {
+    position: absolute;
+    bottom: 0;
+    right: 80%;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .plat_bouton {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+  }
+  .plat_vege {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+  }
+  .plat_portion {
+    position: absolute;
+    bottom: 35%;
+    right: 70%;
+  }
+}

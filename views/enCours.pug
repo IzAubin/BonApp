@@ -1,0 +1,22 @@
+include head.pug 
+  title BonappExpress Commande en cour traiteur
+  link(rel='stylesheet' href='../stylesheets/carte.css')
+  link(rel='stylesheet' href='../stylesheets/historique.css')
+include navAdmin.pug 
+h1 Commandes en cours
+.container
+  ul(class="historique__bigList")
+    each elem in commandes
+      li(class="historique__eachDish")  
+        h2 Commande #
+          span(class="spanListe")=elem.id
+        //- h2 Client :
+        //-   span(class="spanListe")=elem.idClient 
+        //- h2 Prix total :
+        //-   span(class="spanListe")=elem.total
+        //-   span(class="spanListe") $
+        h2 Statut :
+          span(class="spanListe")=elem.statutCommande
+        form(action="/enCours" method="POST" ) 
+          br
+          button(class="myButton" name="btnFini" value=elem.id type="submit" style=elem.isHidden) Terminé

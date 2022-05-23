@@ -1,0 +1,21 @@
+include head.pug 
+  title BonappExpress Historique de commandes
+  include navClient.pug 
+  link(rel='stylesheet' href='../stylesheets/historique.css')
+include menu_css.pug
+h1 Historique de commandes
+.container
+  ul(class="historique__bigList")
+    each elem in Historique 
+      li(class="historique__eachDish") 
+        h2  Nom du plat:
+        p(class="spanListe")=elem.nom
+        h2  Option: 
+          span(class="spanListe")=elem.vege    
+        h2  № de portions: 
+          span(class="spanListe")=elem.portion      
+        h2  Le prix total: 
+          span(class="spanListe")=elem.prix
+        h2  № de commande: 
+          span(class="spanListe")=elem.numCommande
+        br

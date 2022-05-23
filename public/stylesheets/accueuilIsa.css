@@ -1,0 +1,33 @@
+a {
+  color: #799437 !important;
+  text-decoration: none !important;
+}
+
+.bg-image {
+  background-image: url(../images/Hero.jpg);
+  background-size: 2000px;
+  background-position-x: center;
+}
+
+.gradient {
+  background-image: linear-gradient(black, black, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  height: 300px;
+  width: 100%;
+}
+
+.link {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-align: right;
+  font-size: 50px;
+  margin-top: 25px;
+}
+
+.admin {
+  padding-right: 8px !important;
+}
+
+.logo {
+  padding-top: 30px !important;
+  padding-left: 0px !important;
+}/*# sourceMappingURL=accueuilIsa.css.map */

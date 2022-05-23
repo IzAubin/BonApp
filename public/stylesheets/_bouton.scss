@@ -1,0 +1,30 @@
+button,
+input[type="submit"] {
+  border: none !important;
+}
+
+.myButton {
+  box-shadow: inset 0px 0px 0px 0px #7a9437;
+  background: linear-gradient(to bottom, #7a9437 5%, #7a9437 100%);
+  background-color: #7a9437;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+  font-weight: 600 !important;
+  padding: 9px 29px;
+  text-decoration: none;
+  text-shadow: 0px 2px 0px #476e08;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #7a9437 5%, #7a9437 100%);
+  background-color: #7a9437;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}

@@ -1,0 +1,34 @@
+@import "./_variables.scss";
+@import "./_carte_rx.scss";
+
+.liste_plats {
+  background-color: aqua;
+}
+.un_plat {
+  background: rgb(182, 106, 106);
+   width: 1300px;
+}
+.image_plat {
+  background: rgb(212, 202, 104);
+  display: inline-block ;
+  width: 455px;
+  height: 345px;
+}
+
+.form_plat {
+  display: inline-block ;
+  width: 300px;
+}
+
+.a {
+  display: inline-block;
+  width: 455px;
+  height: 345px;
+  background: red;
+}
+.b {
+  display: inline-block;
+  width: 455px;
+  height: 345px;
+  background: blue;
+}

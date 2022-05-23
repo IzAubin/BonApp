@@ -1,0 +1,33 @@
+@import "./_variables.scss";
+
+@media only screen and (max-width: 4000px) {
+  .carte {
+    // color: aqua;
+    height: 345px;
+    width: calc(90%);
+  }
+  .descr {
+    float: left;
+    width: calc(90% - 370px);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+// .liste_plats{
+
+//   width: 90%;
+// }
+
+  .carte {
+    // color: aqua;
+    height: 900px;
+    width: 455px;
+  }
+
+  .descr {
+    float: left;
+    width: 455px;
+  }
+
+
+}

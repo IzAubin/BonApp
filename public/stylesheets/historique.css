@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+}
+
+.historique__bigList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.historique__eachDish {
+  padding-left: 10px;
+  margin: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.411);
+  width: 240px;
+  border-radius: 10px;
+  height: auto;
+}/*# sourceMappingURL=historique.css.map */

@@ -1,0 +1,56 @@
+@media only screen and (max-width: 4000px) {
+  .carte {
+    height: 345px;
+    width: calc(90%);
+  }
+
+  .descr {
+    float: left;
+    width: calc(90% - 370px);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .carte {
+    height: 900px;
+    width: 455px;
+  }
+
+  .descr {
+    float: left;
+    width: 455px;
+  }
+}
+.liste_plats {
+  background-color: aqua;
+}
+
+.un_plat {
+  background: #b66a6a;
+  width: 1300px;
+}
+
+.image_plat {
+  background: #d4ca68;
+  display: inline-block;
+  width: 455px;
+  height: 345px;
+}
+
+.form_plat {
+  display: inline-block;
+  width: 300px;
+}
+
+.a {
+  display: inline-block;
+  width: 455px;
+  height: 345px;
+  background: red;
+}
+
+.b {
+  display: inline-block;
+  width: 455px;
+  height: 345px;
+  background: blue;
+}/*# sourceMappingURL=carteCorr.css.map */

@@ -1,0 +1,25 @@
+include head.pug 
+  title BonappExpress ajouter un plat traiteur
+  link(rel='stylesheet' href='../stylesheets/form.css')
+include navAdmin.pug 
+
+h1 Nouvelle Recette
+
+form(action='/addRecette' method="POST" class="form")
+  h3 Image
+  input#image(class="margeGauche" type='number' min="1" max="5" name='image' placeholder='#' required )
+  h3 Plat
+  input#nom(class="margeGauche" type='text' name='nom' placeholder='Veuillez entrer le titre...' required )
+  h3 Description
+  input#description(class="margeGauche" type='text' name='description' size="30" placeholder='Veuillez entrer la description...' required )
+  h3 Prix
+  input#prix(class="margeGauche" type='text' name='prix' pattern='^[0-9]*$' placeholder='Veuillez entrer le prix...' required )
+  br
+  h3 Actif
+  select#actif(class="margeGauche" name='actif')
+    option(value='1') actif
+    option(value='0') inactif
+  br
+  br
+  br
+  button(class="myButton" style="margin-left: 50px;" type='submit') Submit

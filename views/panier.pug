@@ -1,0 +1,27 @@
+include head.pug 
+  title BonappExpress Panier traiteur
+  link(rel='stylesheet' href='../stylesheets/carte.css') 
+  link(rel='stylesheet' href='../stylesheets/historique.css')
+include navClient.pug 
+h1 Details de la commande
+
+.container
+  ul(class="historique__bigList")
+    each elem in detailCommande
+      li(class="historique__eachDish") 
+        h2 Votre plat: 
+        p(class="spanListe")=elem.nom
+        h2 Option: 
+          span(class="spanListe")=elem.vege
+        h2 № de portions: 
+          span(class="spanListe")=elem.portion
+        h2 Le prix totale: 
+          span(class="spanListe")=elem.prix
+        br
+        form(action='/panier' method="POST")
+          input(type="text" name="totalPrixPortions" value=elem.prix hidden)
+form(action='/panier' method="POST")
+  br
+  br
+  button(class="myButton" style="margin-left: 70px;" name="submitCommande" type='submit') Placer votre commande
+

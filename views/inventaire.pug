@@ -1,0 +1,34 @@
+include head.pug 
+  title BonappExpress Inventaire  traiteur
+  link(rel='stylesheet' href='../stylesheets/carte.css')
+include navAdmin.pug 
+
+h1 Inventaire
+.container-fluid.mt-3
+  table.table.table-striped
+    thead
+        th Image
+        th Plat
+        th Description
+        th Prix
+        th Actif
+    tbody
+      each item in Plats
+        tr
+        td= item.image
+        td= item.nom
+        td= item.description
+        td= item.prix
+        td= item.actif
+        td
+          form(action='/actifRecette' method="POST")
+
+            input(class="margeGauche" type="text" name="id" value=item.id hidden)
+
+            input(class="margeGauche" type="text" name="nom" value=item.nom hidden)
+            input(class="margeGauche" type="text" name="description" value=item.description hidden)
+            input(class="margeGauche" type="text" name="prix" value=item.prix hidden)
+            input(class="margeGauche" type="text" name="actif" value=item.actif hidden)
+
+            button(class="myButton" name="modifierButton" value=item.id type='submit') modifier
+                

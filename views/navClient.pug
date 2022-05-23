@@ -1,0 +1,24 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title NavBar Client
+  link(rel='stylesheet' href='../stylesheets/carte.css')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap' rel='stylesheet')
+.topnav(style="z-index:5;")
+  .container-fluid
+    .row
+      .logo-image.col-md-4.col-sm-12.col-xs-12(style='background-color: black;')
+        a(href='/' class="nav-logo" style="float: left;padding-top: 10px;padding-left: 20px;padding-bottom: 10px;")
+          img(src='../images/BonAppExpress_LogoWhite.png')
+      .col-md-8.col-sm-12.col-xs-12(style='background-color: red, padding-top: 50px;')
+        a(href='/historique' class="nav_links nav_links_admin") Historique
+        a(href='/panier' class="nav_links nav_links_admin") Panier
+        a(href='/menu' class="nav_links nav_links_admin") Menu
+
+.ghost 
+
+
